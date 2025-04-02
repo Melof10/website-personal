@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Personal - Start Bootstrap Theme</title>
+        <title>Federico Nicolás Melo - Software Developer</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Custom Google font-->
@@ -27,29 +27,37 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0 small fw-bolder justify-content-center">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resumen</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#index">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#resume">Resumen</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>                     
             <!-- Header-->
-            <header class="header-container">
+            <header class="header-container" id="index">
                 <div class="container text-center">
                     <div class="badge bg-gradient-primary-to-secondary text-white mb-2">
                         <div class="text-uppercase">SR BACKEND DEVELOPER &middot; ARTIFICIAL INTELLIGENCE &middot; ETHICAL HACKING</div>
                     </div>
                     <h1 class="display-3 fw-bolder mb-4"><span class="text-gradient d-inline">Federico Nicolás Melo</span></h1>
                     <div class="d-flex justify-content-center gap-3">
-                        <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder" href="resume.html">Resumen</a>
+                        <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder" href="#resume">Resumen</a>
                         <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Proyectos</a>
                     </div>
                 </div>
-            </header>            
+            
+                <!-- Ícono de desplazamiento -->
+                <div class="scroll-down">
+                    <a href="#about" id="scrollIcon">
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                </div>
+            </header>                       
             <!-- About Section-->
-            <section class="bg-light pt-3 py-5">
+            <section class="bg-light pt-3 py-5" id="about">
                 <div class="container px-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-xxl-8">
@@ -86,7 +94,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container px-5 my-5">
+            <section class="container px-5 my-5" id="resume">
                 <div class="text-center mb-5">
                     <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resumen</span></h1>
                 </div>
@@ -229,7 +237,7 @@
                     </div>
                 </div>
             </section>
-            <section class="bg-light py-5">
+            <section class="bg-light py-5" id="contact">
                 <div class="container px-5">
                     <!-- Contact form-->
                     <div class="bg-light rounded-4 py-5 px-4 px-md-5">
@@ -298,11 +306,15 @@
                 </div>
             </section>
         </main>
+        <!-- Botón para volver arriba -->
+        <button id="scrollTopBtn" class="scroll-top-btn">
+            <i class="bi bi-arrow-up text-gradient"></i>
+        </button>
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto"><div class="small m-0">Desarrollado por Federico Nicolás Melo - Copyright &copy; 2025</div></div>
                     <div class="col-auto fs-2 gap-4">                    
                         <a class="text-gradient" target="_blank" href="https://linkedin.com/in/federico-nicolas-melo/"><i class="bi bi-linkedin"></i></a>
                         <a class="text-gradient" target="_blank" href="https://github.com/Melof10"><i class="bi bi-github"></i></a>
