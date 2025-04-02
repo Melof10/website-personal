@@ -11878,3 +11878,14 @@ header .container {
   background-color: black !important;
 }
 
+.btn-gradient {
+  background: linear-gradient(to right, #2575fc, #6a11cb); /* Azul a la izquierda, violeta a la derecha */
+  border: none;
+  color: white;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Invertir colores al hacer hover */
+  transform: scale(1.05);
+}
