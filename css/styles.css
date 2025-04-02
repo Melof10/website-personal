@@ -11734,6 +11734,22 @@ html {
 }
 
 /* Personalized styles */
+@media (max-width: 768px) {
+  .btn-text {
+      display: none; /* Oculta el texto en pantallas pequeñas */
+  }
+  .btn-download {
+      width: 50px; /* Ajusta el tamaño del botón */
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0; /* Ajusta el padding */
+  }
+  .btn-download .bi {
+      font-size: 1.5rem; /* Aumenta el tamaño del ícono para mejor visibilidad */
+  }
+}
 
 header {
   display: flex;
