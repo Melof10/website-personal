@@ -11861,3 +11861,20 @@ header .container {
     opacity: 1;
     visibility: visible;
 }
+
+.badge {
+  white-space: normal;  /* Permite que el texto se divida en varias líneas */
+  word-wrap: break-word; /* Rompe las palabras largas si es necesario */
+  text-align: center; /* Centra el texto dentro del badge */
+  max-width: 90%; /* Limita el ancho máximo */
+  display: inline-block; /* Ajusta el tamaño al contenido */
+}
+
+.navbar.scrolled {
+  background-color: white !important;
+}
+
+.navbar.scrolled .hamburger div {
+  background-color: black !important;
+}
+
