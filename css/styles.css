@@ -11732,3 +11732,71 @@ html {
     left: -2vw;
   }
 }
+
+/* Personalized styles */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+
+  position: relative;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+header .container {
+  position: relative;
+  max-width: 800px;
+  z-index: 2;
+}
+
+.navbar {
+  backdrop-filter: blur(10px); /* Efecto difuminado */
+}
+
+.navbar-nav .nav-link {
+  color: white !important; /* Asegura que el texto sea visible */
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  filter: invert(1); /* Cambia el color del icono del menú hamburguesa */
+}
+
+.navbar-custom {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-custom.scrolled {
+  background-color: white !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra sutil */
+}
+
+.navbar-custom .nav-link {
+  color: white !important;
+  font-weight: normal;
+  transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.navbar-custom.scrolled .nav-link {
+  color: black !important;
+  font-weight: bold;
+}
