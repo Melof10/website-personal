@@ -1,9 +1,5 @@
-if (location.protocol !== "https:") {
+if (location.protocol !== "https:" && location.hostname !== "localhost" && location.protocol !== "file:") {
     location.replace("https://" + location.hostname + location.pathname + location.search);
-}
-
-if (window.location.hash) {
-    history.replaceState(null, "", window.location.pathname + window.location.search);
 }
 
 
