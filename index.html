@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
         <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />    
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -30,7 +30,8 @@
                             <li class="nav-item"><a class="nav-link" href="#index">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
                             <li class="nav-item"><a class="nav-link" href="#resume">Resumen</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>                            
+                            <li class="nav-item"><button class="btn btn-link" id="theme-toggle"><i class="bi bi-moon-fill"></i></button></li>
                         </ul>
                     </div>
                 </div>
@@ -73,7 +74,7 @@
                                 <h4 class="fw-bold text-gradient">
                                     Sr. BackEnd Developer especializado en Java y Spring Boot
                                 </h4>
-                                <p class="text-muted">
+                                <p>
                                     Con un enfoque en el desarrollo de soluciones robustas y escalables. Experiencia en arquitectura basada en microservicios, apasionado por construir sistemas eficientes y de alto rendimiento.
                                 </p>
             
@@ -81,7 +82,7 @@
                                 <h5 class="fw-bold text-gradient">
                                     Habilidades clave:
                                 </h5>
-                                <ul class="list-unstyled text-muted">
+                                <ul class="list-unstyled">
                                     <li><i class="bi bi-check-circle-fill text-success"></i> Desarrollo backend con el ecosistema Spring (Spring Framework, Spring Boot, Spring Cloud, Spring Security).</li>
                                     <li><i class="bi bi-check-circle-fill text-success"></i> Integración y mensajería asíncrona con Apache Kafka.</li>
                                     <li><i class="bi bi-check-circle-fill text-success"></i> Contenerización y orquestación con Docker y Kubernetes.</li>
@@ -92,7 +93,7 @@
                                 <h5 class="fw-bold text-gradient">
                                     Con experiencia en proyectos de transformación digital
                                 </h5>
-                                <p class="text-muted">
+                                <p>
                                     Implementando prácticas de desarrollo ágil y CI/CD para garantizar entregas rápidas y de calidad.
                                 </p>
             
@@ -100,7 +101,7 @@
                                 <h5 class="fw-bold text-gradient">
                                     Me motiva:
                                 </h5>
-                                <p class="text-muted">
+                                <p>
                                     Resolver problemas complejos y aprender continuamente nuevas tecnologías para aportar valor al equipo y la organización. 
                                     Estoy abierto a conectar con profesionales interesados en tecnología, innovación y buenas prácticas de desarrollo.
                                 </p>
@@ -127,7 +128,7 @@
                                     <span class="btn-text">Descargar CV</span>
                                 </a>                                
                             </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card shadow border-0 rounded-4 mb-5 bg-light">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -154,7 +155,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card shadow border-0 rounded-4 mb-5 bg-light">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -181,7 +182,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card shadow border-0 rounded-4 mb-5 bg-light">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -206,7 +207,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card shadow border-0 rounded-4 mb-5 bg-light">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -231,7 +232,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card shadow border-0 rounded-4 mb-5 bg-light">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -260,7 +261,7 @@
                         <section>
                             <h2 class="text-secondary fw-bolder mb-4">Educación</h2>
                             <!-- Education Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card shadow border-0 rounded-4 mb-5 bg-light">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -268,24 +269,24 @@
                                                 <div class="text-secondary fw-bolder mb-2">03/2017 - 11/2019</div>
                                                 <div class="mb-2">
                                                     <div class="small fw-bolder">Escuela Superior de Comercio</div>
-                                                    <div class="small text-muted">Córdoba, Argentina</div>
+                                                    <div class="small text-muted"><strong>Córdoba, Argentina</strong></div>
                                                 </div>
                                                 <div class="fst-italic">
-                                                    <div class="small text-muted">Finalizado</div>
+                                                    <div class="small text-muted"><strong>Finalizado</strong></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-8">
                                             <div>
                                                 <p><strong>Técnico Superior en Desarrollo de Software</strong></p>
-                                                <p><strong class="text-muted">Duración:</strong> 3 años</p>
+                                                <p><strong>Duración: </strong><span class="text-muted"><strong> 3 años</strong></span></p>
                                                 Carrera orientada a la creación y mantenimiento de aplicaciones informáticas, abarcando desde el análisis y diseño hasta la implementación y prueba de software. Se enseñan tecnologías clave como Java para la programación y MySQL para la gestión de bases de datos.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card shadow border-0 rounded-4 mb-5 bg-light">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -293,17 +294,17 @@
                                                 <div class="text-secondary fw-bolder mb-2">02/2025 - 11/2026</div>
                                                 <div class="mb-2">
                                                     <div class="small fw-bolder">Teclab Instituto Técnico Superior</div>
-                                                    <div class="small text-muted">Buenos Aires, Argentina</div>
+                                                    <div class="small text-muted"><strong>Buenos Aires, Argentina</strong></div>
                                                 </div>
                                                 <div class="fst-italic">
-                                                    <div class="small text-muted">En curso</div>
+                                                    <div class="small text-muted"><strong>En curso</strong></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-8">
                                             <div>
                                                 <p><strong>Técnico en Data Science</strong></p>
-                                                <p><strong class="text-muted">Duración:</strong> 2 años</p>
+                                                <p><strong>Duración: </strong><span class="text-muted"><strong> 2 años</strong></span></p>
                                                 El Técnico Superior en Data Science está capacitado para recopilar, procesar y analizar grandes volúmenes de datos, aplicando herramientas como Python, SQL y machine learning. Su formación le permite extraer información valiosa, generar modelos predictivos y transformar datos en conocimiento útil para la toma de decisiones en diversas industrias.
                                             </div>
                                         </div>
@@ -311,7 +312,7 @@
                                 </div>
                             </div>
                             <!-- Education Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card shadow border-0 rounded-4 mb-5 bg-light">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -319,17 +320,17 @@
                                                 <div class="text-secondary fw-bolder mb-2">02/2024 - 11/2025</div>
                                                 <div class="mb-2">
                                                     <div class="small fw-bolder">Teclab Instituto Técnico Superior</div>
-                                                    <div class="small text-muted">Buenos Aires, Argentina</div>
+                                                    <div class="small text-muted"><strong>Buenos Aires, Argentina</strong></div>
                                                 </div>
                                                 <div class="fst-italic">
-                                                    <div class="small text-muted">En curso</div>
+                                                    <div class="small text-muted"><strong>En curso</strong></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-8">
                                             <div>
                                                 <p><strong>Técnico Superior en Seguridad Informática</strong></p>
-                                                <p><strong class="text-muted">Duración:</strong> 2 años</p>
+                                                <p><strong>Duración: </strong><span class="text-muted"><strong>2 años</strong></span></p>
                                                 El Técnico en Seguridad Informática es experto en la gestión de la seguridad informática, preparado para proteger la información de las empresas y los datos de las personas. La carrera de ciberseguridad te prepara para atender los requerimientos que generen las empresas o instituciones en el área TIC
                                             </div>
                                         </div>
@@ -342,7 +343,7 @@
                         <!-- Skills Section-->
                         <section>
                             <!-- Skillset Card-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card shadow border-0 rounded-4 mb-5 bg-light">
                                 <div class="card-body p-5">
                                     <!-- Professional skills list-->
                                     <div class="mb-5">
@@ -556,15 +557,23 @@
         <footer class="bg-white py-4 mt-auto footer-custom">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Desarrollado por Federico Nicolás Melo - Copyright &copy; 2025</div></div>
-                    <div class="col-auto fs-2 gap-4">                    
-                        <a class="text-gradient" target="_blank" href="https://linkedin.com/in/federico-nicolas-melo/"><i class="bi bi-linkedin"></i></a>
-                        <a class="text-gradient" target="_blank" href="https://github.com/Melof10"><i class="bi bi-github"></i></a>
-                        <a class="text-gradient" target="_blank" href="https://x.com/Melof10"><i class="bi bi-twitter"></i></a>
+                    <div class="col-auto">
+                        <div class="small m-0 footer-text">Desarrollado por Federico Nicolás Melo - Copyright &copy; 2025</div>
+                    </div>
+                    <div class="col-auto fs-2 gap-4 footer-social">                    
+                        <a class="text-gradient footer-link" target="_blank" href="https://linkedin.com/in/federico-nicolas-melo/">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a class="text-gradient footer-link" target="_blank" href="https://github.com/Melof10">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a class="text-gradient footer-link" target="_blank" href="https://x.com/Melof10">
+                            <i class="bi bi-twitter"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </footer>            
+        </footer>        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

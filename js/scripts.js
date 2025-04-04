@@ -87,3 +87,101 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+
+    // Estado inicial (sin cambiar tema, solo ícono)
+    let isDark = false;
+    themeToggle.addEventListener("click", () => {
+        isDark = !isDark; // Alternar estado
+        themeIcon.className = isDark ? "bi bi-sun-fill" : "bi bi-moon-fill"; // Cambiar ícono
+    });
+});
+
+// Tema Dark
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    
+    // Función para cambiar el tema
+    // En tu función setTheme, agrega la actualización del footer
+    function setTheme(theme) {
+        htmlElement.setAttribute('data-bs-theme', theme);
+        localStorage.setItem('theme', theme);
+        updateButtonIcon(theme);
+        updateCardStyles(theme);
+        updateFooterStyles(theme); 
+    }
+    
+    // Nueva función para el footer
+    function updateFooterStyles(theme) {
+        const footer = document.querySelector('footer.footer-custom');
+        if (!footer) return;
+        
+        if (theme === 'dark') {
+            footer.classList.add('footer-dark');
+            footer.classList.remove('bg-white');
+        } else {
+            footer.classList.remove('footer-dark');
+            footer.classList.add('bg-white');
+        }
+    }
+    
+    function updateButtonIcon(theme) {
+      if (!themeToggleBtn) return;
+      themeToggleBtn.innerHTML = theme === 'dark' ? 
+        '<i class="bi bi-sun"></i>' : 
+        '<i class="bi bi-moon"></i>';
+    }
+
+    function updateCardStyles(theme) {
+        const cards = document.querySelectorAll('.card');
+    
+        cards.forEach(card => {
+            // Eliminar bg-light del card principal en ambos temas
+            card.classList.remove('bg-light', 'bg-dark', 'text-white');
+    
+            if (theme === 'dark') {
+                card.classList.add('bg-dark', 'text-white');
+    
+                // Eliminar bg-light de los elementos internos
+                const innerElements = card.querySelectorAll('.card-body');
+                innerElements.forEach(inner => inner.classList.remove('bg-light'));
+            }
+        });
+    }    
+    
+    // Función para alternar el tema
+    function toggleTheme() {
+      const currentTheme = htmlElement.getAttribute('data-bs-theme') || 'light';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      setTheme(newTheme);
+    }
+    
+    // Inicializar tema
+    function initTheme() {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      
+      setTheme(initialTheme);
+      
+      // Escuchar cambios en las preferencias del sistema (si no hay tema guardado)
+      if (!savedTheme) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          setTheme(e.matches ? 'dark' : 'light');
+        });
+      }
+    }
+    
+    // Asignar evento al botón
+    if (themeToggleBtn) {
+      themeToggleBtn.addEventListener('click', toggleTheme);
+    }
+    
+    // Iniciar
+    initTheme();
+  });
+

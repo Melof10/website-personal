@@ -11968,3 +11968,136 @@ header .container {
 .nav-link:hover::after {
   width: 100%; /* Se extiende solo hasta el ancho del texto */
 }
+
+/* Tema dark */
+/* ========== TEMA OSCURO ========== */
+[data-bs-theme="dark"] {
+  --bs-body-bg: #121212;
+  --bs-body-color: #e0e0e0;
+  --bs-dark: #1a1a1a;
+  --bs-light: #2d2d2d;
+  --bs-border-color: #2d2d2d;
+  --bs-border-color-translucent: rgba(255, 255, 255, 0.1);
+  
+  /* Componentes */
+  --bs-card-bg: #1e1e1e;
+  --bs-card-cap-bg: #2d2d2d;
+  --bs-dropdown-bg: #2d2d2d;
+  --bs-dropdown-link-color: #e0e0e0;
+  --bs-dropdown-link-hover-bg: #3a3a3a;
+  --bs-modal-bg: #1e1e1e;
+  --bs-tooltip-bg: #333;
+  
+  /* Formularios */
+  --bs-form-control-bg: #2d2d2d;
+  --bs-form-control-border-color: #3a3a3a;
+  --bs-form-control-color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] .form-control,
+[data-bs-theme="dark"] .form-select {
+  background-color: var(--bs-form-control-bg);
+  border-color: var(--bs-form-control-border-color);
+  color: var(--bs-form-control-color);
+}
+
+[data-bs-theme="dark"] .form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+[data-bs-theme="dark"] .bg-light {
+  background-color: var(--bs-dark) !important;
+}
+
+[data-bs-theme="dark"] .text-dark {
+  color: var(--bs-body-color) !important;
+}
+
+/* Scrollbar para tema oscuro */
+[data-bs-theme="dark"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-bs-theme="dark"] ::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+[data-bs-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+
+[data-bs-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #4a4a4a;
+}
+
+/* Footer Dark Mode */
+.footer-custom.footer-dark {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-custom.footer-dark .small {
+  color: #b0b0b0 !important;
+}
+
+.footer-custom.footer-dark .text-gradient {
+  color: #e0e0e0 !important;
+  transition: color 0.3s ease;
+}
+
+.footer-custom.footer-dark .text-gradient:hover {
+  color: var(--primary-color) !important;
+}
+
+.footer-custom.footer-dark .bi {
+  filter: brightness(0.85);
+  transition: filter 0.3s ease;
+}
+
+.footer-custom.footer-dark .bi:hover {
+  filter: brightness(1.1);
+}
+
+[data-bs-theme="dark"] .scroll-top-btn {
+  background-color: #222222;
+}
+
+[data-bs-theme="dark"] .scroll-top-btn i {
+  color: #ffffff;
+}
+
+/* Cuando hace scroll en modo oscuro */
+[data-bs-theme="dark"] .navbar-custom.scrolled {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Enlaces del navbar en modo claro */
+.navbar-custom .nav-link {
+  color: #000; /* Negro en modo claro */
+}
+
+/* Enlaces en modo oscuro */
+[data-bs-theme="dark"] .navbar-custom .nav-link {
+  color: rgba(255, 255, 255, 0.75) !important; /* Mantener gris claro en modo oscuro */
+}
+
+/* Color de los enlaces al pasar el mouse en modo oscuro */
+[data-bs-theme="dark"] .navbar-custom .nav-link:hover {
+  color: #ffffff !important; /* Blanco solo al pasar el cursor */
+}
+
+/* Evitar que el color cambie cuando está activo */
+[data-bs-theme="dark"] .navbar-custom .nav-link.active {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+[data-bs-theme="dark"] a {
+  text-decoration: none !important;
+}
