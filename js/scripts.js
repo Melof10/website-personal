@@ -2,6 +2,10 @@ if (location.protocol !== "https:") {
     location.replace("https://" + location.hostname + location.pathname + location.search);
 }
 
+if (window.location.hash) {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+}
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector(".navbar-custom");
