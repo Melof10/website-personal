@@ -1,3 +1,8 @@
+if (location.protocol !== "https:") {
+    location.replace("https://" + location.hostname + location.pathname + location.search);
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector(".navbar-custom");
     const section = document.querySelector("section"); // Primer section de la página
