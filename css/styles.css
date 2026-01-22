@@ -12101,3 +12101,37 @@ a {
 [data-bs-theme="dark"] a {
   text-decoration: none !important;
 }
+
+/* Personalized styles */
+
+/* ===== Resume / Education: agrandar columna izquierda ===== */
+@media (min-width: 992px) {
+  /* Columna izquierda (fecha/rol/empresa) */
+  #resume .card-body .row.align-items-center.gx-5 > .col.text-center.text-lg-start.mb-4.mb-lg-0 {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+
+  /* Columna derecha (bullets/descripcion) */
+  #resume .card-body .row.align-items-center.gx-5 > .col-lg-8 {
+    flex: 0 0 62%;
+    max-width: 62%;
+  }
+}
+
+/* Evitar que la fecha haga salto de línea (Darwoft, etc.) */
+#resume .bg-light.p-4.rounded-4 .text-primary.fw-bolder.mb-2,
+#resume .bg-light.p-4.rounded-4 .text-secondary.fw-bolder.mb-2 {
+  white-space: nowrap;
+}
+
+.footer-social i {
+  font-size: 1.8rem;
+  color: #0d6efd; /* azul bootstrap */
+  transition: all 0.3s ease;
+}
+
+.footer-social i:hover {
+  color: #6610f2;
+  transform: translateY(-3px);
+}
